@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ---- SoulAura design tokens ---- */
+  /* Derived from the official logo: deep navy-teal + warm sand/gold */
+  --color-bg: #F6F2E7;        /* warm linen — soft natural light, keeps the site airy */
+  --color-surface: #FFFFFF;   /* card surface, slightly lifted from bg */
+  --color-primary: #1B2E34;   /* logo background navy-teal — grounding, premium */
+  --color-primary-dark: #101C20;
+  --color-secondary: #6E8B90; /* dusty teal — softer echo of the primary */
+  --color-accent: #D8B586;    /* logo wordmark sand/gold — warmth, used sparingly */
+  --color-dawn: #ECDBBA;      /* lighter sand tint — hero glow, gradients */
+  --color-water: #7FA3A6;     /* soft teal — mindfulness/recovery */
+  --color-ink: #17262B;       /* near-navy for text, matches the logo */
+  --color-muted: #5C6E71;     /* muted body copy */
+  --color-line: #E3DBC7;      /* hairline borders */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-primary-dark);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
+  font-weight: 500;
+}
+
+.font-script {
+  font-family: 'Sacramento', cursive;
+}
+
+/* organic edge for the hero + section dividers */
+.organic-edge {
+  border-radius: 62% 38% 55% 45% / 45% 55% 45% 55%;
+}
+
+.hairline {
+  border-color: var(--color-line);
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-xl border border-line bg-bg px-4 py-2.5 text-[15px] text-ink placeholder:text-muted focus:border-primary;
+  }
+}
+
+/* ---- Editorial motion system ---- */
+
+/* subtle film-grain overlay for a premium, tactile feel */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.035;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* outlined "ghost" numerals for editorial section markers */
+.text-outline {
+  -webkit-text-stroke: 1.5px var(--color-primary);
+  color: transparent;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+
+@layer components {
+  .btn { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-primary px-7 text-[15px] font-semibold text-white transition hover:bg-primary-dark disabled:opacity-50; }
+  .btn-o { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-primary px-7 text-[15px] font-semibold text-primary transition hover:bg-bg; }
+  .inp { @apply min-h-[48px] w-full rounded-xl border border-line bg-white px-4 text-base focus:border-primary; }
+}

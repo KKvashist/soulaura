@@ -1,0 +1,28 @@
+import type { Exercise } from '../types'
+
+export const exercises: Exercise[] = [
+  { id: 'ex-1', name: 'Goblet Squat', category: 'Strength', difficulty: 'Beginner', duration: '3 x 12', targetArea: 'Legs & Glutes', description: 'A foundational squat pattern holding a single weight at the chest.' },
+  { id: 'ex-2', name: 'Kettlebell Swing', category: 'Strength', difficulty: 'Intermediate', duration: '4 x 15', targetArea: 'Posterior Chain', description: 'A hip-hinge power movement that builds strength through the whole back line.' },
+  { id: 'ex-3', name: 'Incline Walk', category: 'Cardio', difficulty: 'Beginner', duration: '20 min', targetArea: 'Full Body', description: 'Steady-state walking on an incline to build aerobic base without joint strain.' },
+  { id: 'ex-4', name: 'Interval Rowing', category: 'Cardio', difficulty: 'Advanced', duration: '18 min', targetArea: 'Full Body', description: 'Alternating hard and easy rowing intervals for cardiovascular conditioning.' },
+  { id: 'ex-5', name: '90/90 Hip Switch', category: 'Mobility', difficulty: 'Beginner', duration: '2 x 10', targetArea: 'Hips', description: 'Improves internal and external hip rotation for smoother movement.' },
+  { id: 'ex-6', name: 'Thoracic Rotation', category: 'Mobility', difficulty: 'Beginner', duration: '2 x 10', targetArea: 'Upper Back', description: 'Opens up the mid-back to support better posture and shoulder health.' },
+  { id: 'ex-7', name: 'Sun Salutation A', category: 'Yoga', difficulty: 'Beginner', duration: '5 rounds', targetArea: 'Full Body', description: 'A flowing sequence that warms the whole body and connects breath to movement.' },
+  { id: 'ex-8', name: 'Pigeon Pose', category: 'Yoga', difficulty: 'Intermediate', duration: '60 sec / side', targetArea: 'Hips', description: 'A deep hip opener that also encourages a calm, grounded state of mind.' },
+  { id: 'ex-9', name: 'Dead Bug', category: 'Core', difficulty: 'Beginner', duration: '3 x 10', targetArea: 'Core', description: 'Builds core control and coordination without strain on the lower back.' },
+  { id: 'ex-10', name: 'Hollow Hold', category: 'Core', difficulty: 'Advanced', duration: '4 x 20 sec', targetArea: 'Core', description: 'A full-body tension hold that builds deep core endurance.' },
+  { id: 'ex-11', name: 'Foam Rolling — Legs', category: 'Recovery', difficulty: 'Beginner', duration: '8 min', targetArea: 'Legs', description: 'Self-myofascial release to ease tightness after training.' },
+  { id: 'ex-12', name: 'Legs-Up-the-Wall', category: 'Recovery', difficulty: 'Beginner', duration: '10 min', targetArea: 'Full Body', description: 'A restorative pose that calms the nervous system and eases tired legs.' },
+  { id: 'ex-13', name: 'Box Breathing', category: 'Breathwork', difficulty: 'Beginner', duration: '5 min', targetArea: 'Nervous System', description: 'Equal-count inhale, hold, exhale, hold — a simple reset for focus and calm.' },
+  { id: 'ex-14', name: 'Extended Exhale Breathing', category: 'Breathwork', difficulty: 'Beginner', duration: '5 min', targetArea: 'Nervous System', description: 'Lengthening the exhale to activate the body\u2019s natural relaxation response.' },
+  { id: 'yoga-1', name: 'Tadasana (Mountain Pose)', category: 'Yoga', difficulty: 'Beginner', duration: '1 min', targetArea: 'Standing', description: 'Stand tall, feet grounded, spine long and shoulders relaxed. The base of every standing pose.' },
+  { id: 'yoga-2', name: 'Vrikshasana (Tree Pose)', category: 'Yoga', difficulty: 'Beginner', duration: '30 sec / side', targetArea: 'Balance', description: 'Balance on one leg with the other foot resting on the calf or thigh. Builds focus and stability.' },
+  { id: 'yoga-3', name: 'Adho Mukha Svanasana (Downward Dog)', category: 'Yoga', difficulty: 'Beginner', duration: '1 min', targetArea: 'Full Body', description: 'Hips lifted, hands and feet pressing down. Lengthens the spine and hamstrings.' },
+  { id: 'yoga-4', name: 'Bhujangasana (Cobra Pose)', category: 'Yoga', difficulty: 'Beginner', duration: '30 sec x 3', targetArea: 'Back', description: 'Lie on your belly and lift the chest, shoulders away from the ears. Opens chest and strengthens the back.' },
+  { id: 'yoga-5', name: "Balasana (Child's Pose)", category: 'Yoga', difficulty: 'Beginner', duration: '1-2 min', targetArea: 'Rest', description: 'Kneel, sit back on the heels and fold forward. A resting pose to release back and hips.' },
+  { id: 'yoga-6', name: 'Virabhadrasana II (Warrior II)', category: 'Yoga', difficulty: 'Beginner', duration: '30 sec / side', targetArea: 'Legs & Hips', description: 'Wide stance, front knee bent, arms extended. Builds leg strength and stamina.' },
+  { id: 'yoga-7', name: 'Trikonasana (Triangle Pose)', category: 'Yoga', difficulty: 'Beginner', duration: '30 sec / side', targetArea: 'Side Body', description: 'Wide stance, reach to the front shin and open the chest. Stretches legs and side body.' },
+  { id: 'yoga-8', name: 'Marjaryasana-Bitilasana (Cat-Cow)', category: 'Yoga', difficulty: 'Beginner', duration: '10 rounds', targetArea: 'Spine', description: 'On hands and knees, alternate rounding and arching the spine with the breath.' },
+  { id: 'yoga-9', name: 'Setu Bandhasana (Bridge Pose)', category: 'Yoga', difficulty: 'Beginner', duration: '30 sec x 3', targetArea: 'Glutes & Back', description: 'Lie on your back, feet flat, lift the hips. Strengthens glutes and opens the chest.' },
+  { id: 'yoga-10', name: 'Savasana (Corpse Pose)', category: 'Yoga', difficulty: 'Beginner', duration: '5 min', targetArea: 'Rest', description: 'Lie flat and completely relax, breathing naturally. Closes every practice.' },
+]

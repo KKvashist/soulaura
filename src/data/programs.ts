@@ -1,0 +1,58 @@
+import type { Program } from '../types'
+
+export const programs: Program[] = [
+  {
+    id: 'strength-conditioning',
+    title: 'Strength & Conditioning',
+    description: 'Build functional strength, endurance, and confidence.',
+    image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=900&auto=format&fit=crop',
+    icon: 'Dumbbell',
+    difficulty: 'Intermediate',
+    duration: '45 min',
+  },
+  {
+    id: 'mobility-flexibility',
+    title: 'Mobility & Flexibility',
+    description: 'Move freely, improve posture, and build better movement patterns.',
+    image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=900&auto=format&fit=crop',
+    icon: 'Waves',
+    difficulty: 'All Levels',
+    duration: '30 min',
+  },
+  {
+    id: 'yoga-mindful-movement',
+    title: 'Yoga & Mindful Movement',
+    description: 'Connect movement with breath and awareness.',
+    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=900&auto=format&fit=crop',
+    icon: 'Flower2',
+    difficulty: 'All Levels',
+    duration: '50 min',
+  },
+  {
+    id: 'meditation-breathwork',
+    title: 'Meditation & Breathwork',
+    description: 'Develop calmness, focus, and mental clarity.',
+    image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=900&auto=format&fit=crop',
+    icon: 'Wind',
+    difficulty: 'Beginner',
+    duration: '20 min',
+  },
+  {
+    id: 'functional-fitness',
+    title: 'Functional Fitness',
+    description: 'Train your body for real-world movement and everyday performance.',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=900&auto=format&fit=crop',
+    icon: 'Activity',
+    difficulty: 'Intermediate',
+    duration: '40 min',
+  },
+  {
+    id: 'recovery-wellness',
+    title: 'Recovery & Wellness',
+    description: 'Prioritize rest, mobility, sleep, and sustainable progress.',
+    image: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=900&auto=format&fit=crop',
+    icon: 'Leaf',
+    difficulty: 'All Levels',
+    duration: '25 min',
+  },
+]
