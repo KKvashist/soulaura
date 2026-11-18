@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { cn } from '../lib/utils'
-import LogoMark from './LogoMark'
 import MagneticButton from './MagneticButton'
 
 const links = [
@@ -59,9 +58,14 @@ export default function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-        <Link to="/" className="flex items-center gap-1.5 text-primary">
-          <LogoMark size={26} />
-          <span className="font-script text-4xl leading-none text-primary">Soulaura</span>
+        <Link to="/" aria-label="Soulaura — home" className="flex items-center">
+          <img
+            src="/assets/soulaura-logo.png"
+            alt="Soulaura"
+            width={900}
+            height={457}
+            className="h-11 w-auto sm:h-12 lg:h-14"
+          />
         </Link>
 
         <ul className="hidden items-center gap-9 lg:flex">

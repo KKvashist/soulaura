@@ -2,7 +2,6 @@ import { useEnquiry } from '../ctx'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Instagram, Youtube, Linkedin } from 'lucide-react'
-import LogoMark from './LogoMark'
 import { postToSheet, SCRIPT_URL, COMMUNITY_URL } from '../lib/config'
 
 const nav = ['Home', 'Programs', 'Exercises', 'Mindfulness', 'Events', 'Progress', 'About', 'Contact']
@@ -18,9 +17,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
-            <Link to="/" className="flex items-center gap-1.5 text-primary-dark">
-              <LogoMark size={24} />
-              <span className="font-script text-3xl leading-none">Soulaura</span>
+            <Link to="/" aria-label="Soulaura — home" className="inline-flex items-center">
+              <img
+                src="/assets/soulaura-logo.png"
+                alt="Soulaura"
+                width={900}
+                height={457}
+                className="h-14 w-auto"
+              />
             </Link>
             <p className="mt-3 text-muted">Strength begins within</p>
             <div className="mt-4 flex flex-wrap gap-4 text-[15px]">
